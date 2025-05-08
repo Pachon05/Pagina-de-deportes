@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Noticia</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><h1>Detalle de Noticia</h1></header>
+  <main id="detalle-noticia"></main>
+  <div class="volver-container">
+    <a class="volver-btn" href="index.html">← Volver al inicio</a>
+  </div>
+  <footer><p>&copy; 2025 Noticias Deportivas</p></footer>
+
+  <script src="data.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const deporte = params.get("deporte");
+    const id = parseInt(params.get("id"));
+
+    const noticia = data[deporte]?.[id];
+    const contenedor = document.getElementById("detalle-noticia");
+
+    if (noticia) {
+      contenedor.innerHTML = `
+        <img src="${noticia.imagen}" alt="${noticia.titulo}" />
+
+        <h2>${noticia.titulo}</h2>
+        <p>${noticia.contenido}</p>
+        <a href="noticias.html?deporte=${deporte}">← Volver a noticias</a>
+      `;
+    } else {
+      contenedor.innerHTML = `<p>Noticia no encontrada.</p>`;
+    }
+  </script>
+</body>
+</html>
