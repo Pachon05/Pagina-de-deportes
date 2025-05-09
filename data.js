@@ -39,7 +39,7 @@ const data = {
       fecha: "6 de mayo de 2025",
       autor: "Marcelo Ruiz",
       lugar: "Los Ángeles, EE.UU.",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/LeBron_James_Lakers.jpg/640px-LeBron_James_Lakers.jpg"
+      imagen: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.france24.com%2Fes%2Fdeportes%2F20230513-postemporada-nba-los-%25C3%25A1ngeles-lakers-borran-a-los-warriors-y-se-instalan-en-las-finales&psig=AOvVaw0HJtnDFN0jE5k2jaZB0-Jt&ust=1746880365513000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLi4l4Kzlo0DFQAAAAAdAAAAABAJ"
     },
     {
       titulo: "All-Star Game 2025",
