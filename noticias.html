@@ -1,35 +1,32 @@
-<!-- noticias.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Noticias</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias de <span id="deporte-titulo"></span></title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header><h1 id="titulo-deporte"></h1></header>
-  <main id="noticias-container"></main>
-  <a class="volver-btn" href="index.html">← Volver al inicio</a>
-  <div class="volver-container">
-    <a class="volver-btn" href="index.html">← Volver al inicio</a>
-  </div>
-  <footer><p>&copy; 2025 Noticias Deportivas</p></footer>
-  <script src="data.js"></script>
-  <script>
-    const params = new URLSearchParams(location.search);
-    const deporte = params.get("deporte");
-    document.getElementById("titulo-deporte").textContent = `Noticias de ${deporte.charAt(0).toUpperCase() + deporte.slice(1)}`;
+    <h1>Noticias de <span id="deporte-titulo"></span></h1>
+    <div id="noticias-lista"></div>
+    <a href="index.html">← Volver</a>
 
-    const container = document.getElementById("noticias-container");
-    const noticias = data[deporte] || [];
-
-    noticias.forEach((noticia, index) => {
-      const card = document.createElement("div");
-      card.className = "noticia";
-      card.innerHTML = `<h2>${noticia.titulo}</h2><p>${noticia.resumen}</p>
-        <a href="noticia.html?deporte=${deporte}&id=${index}">Leer más</a>`;
-      container.appendChild(card);
-    });
-  </script>
+    <script src="data.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const deporte = urlParams.get('deporte');
+        document.getElementById('deporte-titulo').innerText = deporte.charAt(0).toUpperCase() + deporte.slice(1);
+        const lista = data[deporte];
+        const noticiasDiv = document.getElementById('noticias-lista');
+        
+        lista.forEach((noticia, index) => {
+            const noticiaItem = document.createElement('div');
+            noticiaItem.innerHTML = `
+                <h2><a href="noticia.html?deporte=${deporte}&id=${index}">${noticia.titulo}</a></h2>
+                <p>${noticia.resumen}</p>
+            `;
+            noticiasDiv.appendChild(noticiaItem);
+        });
+    </script>
 </body>
 </html>
