@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle de la Noticia</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de la Noticia</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="noticia-detail">
-        <h2 id="noticia-titulo"></h2>
-        <img id="noticia-imagen" src="" alt="Imagen noticia">
-        <p><strong>Fecha:</strong> <span id="noticia-fecha"></span></p>
-        <p><strong>Autor:</strong> <span id="noticia-autor"></span></p>
-        <p><strong>Lugar:</strong> <span id="noticia-lugar"></span></p>
-        <div id="noticia-contenido"></div>
-        <a href="noticias.html?deporte=futbol">← Volver a noticias de Fútbol</a>
+  <header>
+    <h1>Detalle de la Noticia</h1>
+  </header>
+
+  <main class="noticia detalle" id="noticia-detail">
+    <h2 id="noticia-titulo"></h2>
+    <img id="noticia-imagen" src="" alt="Imagen noticia" style="max-width: 100%; border-radius: 8px;">
+    <p><strong>Fecha:</strong> <span id="noticia-fecha"></span></p>
+    <p><strong>Autor:</strong> <span id="noticia-autor"></span></p>
+    <p><strong>Lugar:</strong> <span id="noticia-lugar"></span></p>
+    <div id="noticia-contenido"></div>
+    <div class="volver-container">
+      <a class="volver-btn" id="btn-volver">← Volver a noticias</a>
     </div>
+  </main>
 
-    <script src="data.js"></script>
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const deporte = urlParams.get('deporte');
-        const id = urlParams.get('id');
-        const noticia = data[deporte][id];
+  <footer>
+    <p>&copy; 2025 Noticias Deportivas</p>
+  </footer>
 
-        document.getElementById('noticia-titulo').innerText = noticia.titulo;
-        document.getElementById('noticia-imagen').src = noticia.imagen;
-        document.getElementById('noticia-fecha').innerText = noticia.fecha;
-        document.getElementById('noticia-autor').innerText = noticia.autor;
-        document.getElementById('noticia-lugar').innerText = noticia.lugar;
-        document.getElementById('noticia-contenido').innerHTML = noticia.contenido;
-    </script>
+  <script src="data.js"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const deporte = urlParams.get('deporte');
+    const id = urlParams.get('id');
+    const noticia = data[deporte][id];
+
+    document.getElementById('noticia-titulo').innerText = noticia.titulo;
+    document.getElementById('noticia-imagen').src = noticia.imagen;
+    document.getElementById('noticia-fecha').innerText = noticia.fecha;
+    document.getElementById('noticia-autor').innerText = noticia.autor;
+    document.getElementById('noticia-lugar').innerText = noticia.lugar;
+    document.getElementById('noticia-contenido').innerHTML = noticia.contenido;
+
+    document.getElementById('btn-volver').href = `noticias.html?deporte=${deporte}`;
+  </script>
 </body>
 </html>
