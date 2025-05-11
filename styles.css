@@ -47,7 +47,7 @@ body {
   .noticia a {
     display: inline-block;
     margin-top: 10px;
-    color: #1e90ff;
+    color: #000000;
     text-decoration: none;
   }
   .volver-container {
@@ -66,7 +66,7 @@ body {
 }
 
 .volver-btn:hover {
-  background: #0f6ac1;
+  background: #000000;
 }
 .nav-links {
   text-align: center;
