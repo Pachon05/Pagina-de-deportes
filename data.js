@@ -16,7 +16,7 @@ const data = {
       fecha: "8 de mayo de 2025",
       autor: "Carla Torres",
       lugar: "Barcelona, España",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Lionel_Messi_20180626.jpg/640px-Lionel_Messi_20180626.jpg"
+      imagen: "https://i.ytimg.com/vi/0ehmagJY4N0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLANn73x2p2-HV5epl4cl78zkzrHww"
     },
     {
       titulo: "Real Madrid gana la Champions",
@@ -34,7 +34,7 @@ const data = {
       fecha: "5 de mayo de 2025",
       autor: "Luis Méndez",
       lugar: "Londres, Inglaterra",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Real_Madrid_CF.svg/512px-Real_Madrid_CF.svg.png"
+      imagen: "https://ichef.bbci.co.uk/ace/standard/3840/cpsprodpb/b064/live/8f9e7040-20a6-11ef-80aa-699d54c46324.jpg"
     }
   ],
   basquetbol: [
@@ -54,7 +54,7 @@ const data = {
       fecha: "6 de mayo de 2025",
       autor: "Marcelo Ruiz",
       lugar: "Los Ángeles, EE.UU.",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/LeBron_James_Lakers.jpg/640px-LeBron_James_Lakers.jpg"
+      imagen: "https://ca-times.brightspotcdn.com/dims4/default/674982a/2147483647/strip/true/crop/4999x3333+0+0/resize/1200x800!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F83%2Fdd%2F6f15ba8d45509452e534ba260c18%2F1504231-sp-0429-lakers-twolves-gm5-rcg-4608.jpg"
     },
     {
       titulo: "All-Star Game 2025",
@@ -72,7 +72,7 @@ const data = {
       fecha: "3 de mayo de 2025",
       autor: "Ana López",
       lugar: "Chicago, EE.UU.",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Stephen_Curry_dribbling_2017.jpg/640px-Stephen_Curry_dribbling_2017.jpg"
+      imagen: "https://enkq8rj78bi.exactdn.com/wp-content/uploads/2025/02/NBA-All-Star-2025-1.jpg"
     }
   ],
   tenis: [
@@ -92,7 +92,7 @@ const data = {
       fecha: "2 de mayo de 2025",
       autor: "Isabel Sánchez",
       lugar: "Londres, Inglaterra",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Carlos_Alcaraz_2023.jpg/640px-Carlos_Alcaraz_2023.jpg"
+      imagen: "https://www.atptour.com/-/media/2024-images/news/2024/07/14/16/00/wimbledon-2024-domingo-alcaraz-trofeo.jpg"
     },
     {
       titulo: "Nadal se retira del tenis",
@@ -110,7 +110,7 @@ const data = {
       fecha: "1 de mayo de 2025",
       autor: "Fernando Ríos",
       lugar: "París, Francia",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Rafael_Nadal_2011_Roland_Garros.jpg/640px-Rafael_Nadal_2011_Roland_Garros.jpg"
+      imagen: "https://cdn-3.expansion.mx/dims4/default/1b8a502/2147483647/strip/true/crop/4395x2930+0+0/resize/1200x800!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F29%2F7a%2F042e9ea74640a0e19654bd7e9038%2F000-36jr4n7.jpg"
     }
   ]
 };
